@@ -1,18 +1,18 @@
 :root {
-  --bg: #fafaf7;
+  --bg: #fefffc;
   --fg: #16181d;
   --muted: #5d636f;
-  --line: #dcdcd4;
-  --accent: #2f6fed;
+  --line: #a5613c;
+  --accent: #aee0f8;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0f1115;
+    --bg: #010007;
     --fg: #eceef2;
     --muted: #98a0ad;
-    --line: #272b33;
-    --accent: #6e9bff;
+    --line: #70260f;
+    --accent: #aee0fF;
   }
 }
 *, *::before, *::after { box-sizing: border-box; }
