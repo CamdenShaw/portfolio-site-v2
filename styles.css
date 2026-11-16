@@ -2,8 +2,8 @@
   --bg: #fefffc;
   --fg: #16181d;
   --muted: #5d636f;
-  --line: #a5613c;
-  --accent: #aee0f8;
+  --line: #95717f;
+  --accent: #aee0fc;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -12,7 +12,7 @@
     --fg: #eceef2;
     --muted: #98a0ad;
     --line: #70260f;
-    --accent: #aee0fF;
+    --accent: #aee0ff;
   }
 }
 *, *::before, *::after { box-sizing: border-box; }
