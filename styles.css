@@ -70,7 +70,7 @@ h1 {
   .wire *:not(path) {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: draw 1s ease-out forwards;
+    animation: draw calc(1s - var(--d, 0s)/2) ease-out forwards;
     animation-delay: var(--d, 0s);
   }
   .dot { animation: pulse 2s ease-in-out infinite; }
