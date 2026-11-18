@@ -14,17 +14,78 @@
   <body>
     <main>
       <p class='path'><b>~/</b>camdenshaw.ca</p>
-      <svg class='wire' viewBox='0 0 240 140' fill='none' stroke='currentColor'
-           stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'>
-        <rect pathLength='1' x='2' y='2' width='236' height='136' rx='10'/>
-        <path pathLength='1' style='--d:.2s' d='M2 28h236'/>
-        <circle pathLength='1' style='--d:.3s' cx='16' cy='15' r='3'/>
-        <circle pathLength='1' style='--d:.35s' cx='28' cy='15' r='3'/>
-        <circle pathLength='1' style='--d:.4s' cx='40' cy='15' r='3'/>
-        <rect class='hl' pathLength='1' style='--d:.5s' x='18' y='44' width='120' height='14' rx='3'/>
-        <path pathLength='1' style='--d:.7s' d='M18 72h96M18 86h74'/>
-        <rect pathLength='1' style='--d:.9s' x='152' y='44' width='70' height='80' rx='6'/>
-        <path pathLength='1' style='--d:1.1s' d='M18 112h54'/>
+      <svg class="wire" viewBox="0 0 240 140" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="overflow: visible">
+        <g clas="top-clapper" transform-origin="2 28">
+          <path transform-origin="2 28" fill="transparent" stroke="var(--muted)" stroke-width="2" d="M2 28V16A12 12 0 0 1 12 2H228A12 12 0 0 1 238 12V28z" />
+          <circle pathLength="1" style="--d:.3s" cx="16" cy="15" r="3"></circle>
+          <circle pathLength="1" style="--d:.35s" cx="28" cy="15" r="3"></circle>
+          <circle pathLength="1" style="--d:.4s" cx="40" cy="15" r="3"></circle>
+          <animateTransform 
+            attributeName="transform" 
+            type="rotate" 
+            values="-12.5;-15;0;-0.125;0"
+            fill="freeze"
+            calcMode="spline"
+            keyTimes="0;0.25;0.7;0.9;1"
+            keySplines="0 1 0 0;1 0 1 1;0 1 0 0;0.5 0 1 1"
+            dur="0.6s"
+          />
+        </g>
+        <g class="body">
+            <path class="body" stroke="var(--muted)" stroke-width="2" d="M2 28V128A12 12 0 0 0 12 138H228A12 12 0 0 0 238 128V28z"></path>
+            <rect class="hl" pathLength="1" style="--d:.5s" x="18" y="44" width="120" height="14" rx="3">
+              <animate
+                attributeName="opacity"
+                values="0;0;0;0;0.8;1"
+                dur="0.8s"
+                fill="freeze"  
+              />
+            </rect> 
+            <path transform-origin="72,18" d="M18 72h96M18 86h74">
+              <animate
+                attributeName="d"
+                values="M18 72h0M18 86h0;M18 72h0M18 86h0;M18 72h48M18 86h0;M18 72h96M18 86h37;M18 72h96M18 86h74"
+                dur="0.8s"
+                keyTimes="0;0.4;0.6;0.8;1"
+              /> 
+              <animate
+                attributeName="opacity" 
+                values="0;0;0;1" 
+                dur="0.66s" 
+                fill="freeze"  
+              />  
+            </path> 
+            <rect style="--d:.9s" x="152" y="44" width="70" height="80" rx="6">
+              <animate
+                attributeName="opacity"
+                values="0;0;0;0;0.4;1"
+                dur="0.8s"
+                fill="freeze"  
+              />
+            </rect>
+          <path pathLength="1" d="M18 112h54">
+            <animate 
+              attributeName="d" 
+              values="M18 112h0;M18 112h0;M18 112h54"
+              dur="0.9s" 
+              fill="backwards" 
+              keyTimes="0;0.8;1" 
+            />
+            <animate
+              attributeName="opacity"
+              values="0;0;0;0;1"
+              dur="0.85s"
+              fill="freeze"
+            />
+          </path>
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            values="0 0;0 0;0 0.8;0 0;0 0.5;0 0"
+            keyTimes="0;0.6;0.65;0.69;0.7;1"
+            dur="0.8s"
+          />
+        </g>
       </svg>
       <h1>Camden Shaw</h1>
       <p class='role'>Senior Frontend Developer</p>
